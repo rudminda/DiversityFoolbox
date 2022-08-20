@@ -4,23 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Destinations</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 
-
-<script>
-
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
-  $( "#accordion" ).accordion({
-  active: false
-});
-  </script>
-
-  <style type="text/css">
-
-  </style>
 </head>
 <body onload="redirectToPDF()"> 
 
@@ -39,7 +24,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                                                                      -->
 
 
-      Whoops.  Please go to  <a href="https://diversityfoolbox.com/DiversityFoolbox.pdf">https://diversityfoolbox.com/DiversityFoolbox.pdf</a>
+      <div style="font-size: 20px;">Whoops.  Please go to  <a href="https://diversityfoolbox.com/DiversityFoolbox.pdf">https://diversityfoolbox.com/DiversityFoolbox.pdf</a></div>
 
 
       
@@ -63,7 +48,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 <script>
     function redirectToPDF() {
         setTimeout( function() {
-            window.location = 'diversityfoolbox.com/DiversityFoolbox.pdf';
+            window.location = './DiversityFoolbox.pdf';
         }, 3000);
         
     }

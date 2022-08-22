@@ -3,11 +3,91 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Destinations</title>
+  <title>Diversity Foolbox</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!--Cooper Black Font-->
+  <link href="http://fonts.cdnfonts.com/css/arial-nova" rel="stylesheet">
 
+
+<!--        <a class="link" href="./#/">/</a>* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {...}
+         <a class="link" href="./#/">/</a>* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {...}       
+        <a class="link" href="./#/">/</a>* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {...}        
+        <a class="link" href="./#/">/</a>* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {...}        
+        <a class="link" href="./#/">/</a>* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {...}      
+-->
+
+  <style type="text/css">
+        #h1bottom {font-size: auto;}
+        #h1top {font-size: 30px; }
+
+        .headImg {height: 80px; width: auto; ;}
+        .headImg {min-height: 80px; min-width: 70px;}
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (max-width: 270px) {
+             .headImg { height: auto; max-width: 50%; max-height: 80px;}
+             #h1top {font-size: 20px;  }
+             #h1bottom {font-size: 20px;}      
+             #h1bottom2 {font-size: 10px; }       
+        }         
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 370px) {
+             .headImg { height: auto; max-width: 50%; max-height: 80px;}
+             #h1top {font-size: 33px;  }
+             #h1bottom {font-size: 30px;}
+             #h1bottom2 {font-size: 12px; }
+        } 
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (min-width: 515px) {
+
+             #h1top {font-size: 44px; }
+             #h1bottom {font-size: 40px;}
+             #h1bottom2 {font-size: 14px; }
+        }                     
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (min-width: 525px) {
+            #titlesArea { height: auto; }
+             #h1top {font-size: 57px; }
+             #h1bottom {font-size: 50px;}
+             #h1bottom2 {font-size: 16px; }
+        }
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 708px) {
+             .headImg {  }
+             #h1top {font-size: 70px; }
+             #h1bottom {font-size: 60px;}
+             #h1bottom2 {font-size: 20px; }
+        }  
+
+
+
+
+
+
+        .grayRow { width:  100%; padding: 5px; margin: 0px;
+            background-color: #ccc;
+            font-family: Arial; font-size: 21px;
+        }
+        .whiteRow { width:  100%; padding: 5px; margin: 0px;
+            background-color: #fff;
+            font-family: Arial; font-size: 21px;
+        }
+        .rowTitle { width:  100%; padding: 5px; margin: 0px;
+            background-color: transparent;
+            font-family: Arial; font-size: 25px; font-weight: bold; color: rgb(14,77,176);
+        }
+        .link { font-weight: bold; color: black;
+        }
+
+  </style>
 
 </head>
-<body onload="redirectToPDF()"> 
+<body onload="removeCapitalsFromURLid()"> 
 
 <!--
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -24,13 +104,196 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                                                                      -->
 
 
-      <div style="font-size: 20px;">Whoops.  Please go to  <a href="https://diversityfoolbox.com/DiversityFoolbox.pdf">https://diversityfoolbox.com/DiversityFoolbox.pdf</a></div>
+      <!--div style="font-size: 20px;">Whoops.  Please go to  <a href="https://diversityfoolbox.com/DiversityFoolbox.pdf">https://diversityfoolbox.com/DiversityFoolbox.pdf</a></div>
+<div id="headArea"-->
 
+        <h1 id="h1top" style = "position: relative; margin: 0; width: 100%; height: auto; margin:  0; padding:  0; font-family: Cooper Black, Cooper Black Std; color:  white;  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;  border: 0px solid green; text-align: center; background-color: #fff;">DiversityFoolbox
+        <a href="./DiversityFoolbox.pdf" style="position: relative; float: right; display: block; float: right; background-color: #ccc; border-radius: 8px; padding:  3px; font-size: 15px; font-family: Calibri; text-shadow: none;">Printable PDF</a>
+        </h1>
+    <div id="flexArea" style = "display: flex; justify-content: space-between;  align-items: center; min-width: 100% !important; border: 0px solid red; height: auto; background-color: #fff;">
 
-      
+        <div  style="display: flex; flex-wrap: wrap; justify-content: space-around ;border: 0px solid black; float: left; white-space: nowrap; width: 33%;"> 
+            <img id="imgFace" class="headImg" src="./images/face.jpg" style="border: 0px solid black; float: left;" />
+            <img id="imgFace" class="headImg" src="./images/fist.jpg" style="border: 0px solid black; float: left;" />
+        </div>
+        <div id="titlesArea" style = "display: flex; flex-direction: column; align-items: top; position: relative; height: 100%; margin:  0; padding: 0; font-family: Cooper Black, Cooper Black Std; color:  white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  border: 0px solid green; text-align: center; width: 33%;">
+            
+            <h2 id="h1bottom" style = "position: relative; margin: 0; text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;  border: 0px solid green; ">.com</h2>
+            <br>
+            <h3 id="h1bottom2" style = "position: relative; margin: 0; font-family: Calibri; color: black; text-shadow: -0.5px -0.5px 0 #999, 0.5px -0.5px 0 #999, -0.5px 0.5px 0 #999, 0.5px 0.5px 0 #999; white-space: normal; ">A truth-telling, anti-Marxist parody of <a href="https://www.racialequitytools.org/glossary" target="_blank"> JMU's Diversity Toolbox</a></h3>
+        </div>
+        <div  style="display: flex; flex-wrap: wrap; justify-content: space-around ; align-items: center; border: 0px solid black; float: right; white-space: nowrap; width: 33%;">
+            <img id="imgFace" class="headImg" src="./images/jack.jpg" style="border: 0px solid black; float: right;" />
+            <img id="imgFace" class="headImg" src="./images/titleImgsRight.png" style="border: 0px solid black; float: right;" />
+        </div>
+    </div>
+   
+<hr>      
 
-
-
+<div id="content">
+    <div  id="ableism" class="grayRow"><span class="rowTitle">Ableism – </span>The suggestion that preferring able people is a form of <a class="link" href="./#oppression">oppression</a>*. (Truly <a class="link" href="./#woke">woke</a>* <a class="link" href="./#neomarxism">neo-Marxists</a>* seek to unbuild societal institutions, in all their aspects, and this includes replacing able
+    professionals with clowns, bums, or <a class="link" href="./#criticalconsciousness">Critically-conscious</a>* sabateurs.)
+    </div><div  id="accountability" class="whiteRow"><span class="rowTitle">Accountability – </span>The <a class="link" href="./#woke">woke</a>* utilitarian justification for admitted injustices. E.g, the police officers
+    who knelt upon George Floyd may’ve been innocent, but should be convicted, as if they were guilty,
+    merely for the sake of nation-wide police accountability.
+    </div><div  id="ally" class="grayRow"><span class="rowTitle">Ally – </span>Moderates not personally invested in the <a class="link" href="./#criticalconsciousness">Critically-conscious</a>* <a class="link" href="./#neomarxism">neo-Marxist</a>* <a class="link" href="./#dei">DEI</a>* agenda, or
+    in a particular minority, are conditioned to enter into the ‘Ally zone.’ Here, it’s enough that a person
+    simply doesn’t oppose the <a class="link" href="./#woke">woke</a>* agenda, but just remains silently approving.
+    </div><div  id="belonging" class="whiteRow"><span class="rowTitle">Belonging – </span>Obligatory spontaneous celebration, inversely proportional to a person/thing’s need for
+    <a class="link" href="./#safespace">Safe Space</a>*. (It was a pious U.S.S.R. tradition, that the first person to stop celebrating was hauled
+    away to be sacrificially <a class="link" href="./#cancel">canceled</a>*, in secret, with a gunshot.)
+    </div><div  id="black" class="grayRow"><span class="rowTitle">Black Lives Matter – </span>A front-organization run by self-professed “trained <a class="link" href="./#marxism ">Marxists</a>*,” which rioted
+    the entire summer of 2020, killing 24, to try to hurry up Marx’s prophesied day of universal world
+    revolution. (Meanwhile, its leaders, just like in <a href="https://en.wikipedia.org/wiki/Animal_Farm#Plot_summary" target="_blank"><i>Animal Farm</i></a>, spent the proletariat’s hard-earned
+    donations on $12M of luxury properties in LA & Toronto.)
+    </div><div  id="cancel" class="whiteRow"><span class="rowTitle">Cancel – </span>To topple any <a class="link" href="./#privilege">privileged</a>* or <a class="link" href="./#collusion">colluding</a>* person.
+    </div><div  id="cisgender" class="grayRow"><span class="rowTitle">Cis-gender – </span>A designation used to characterize a normalized majority as if it were a mere minority,
+    or co-equal sharer in legitimacy, together with a fringe, deviant peculiarity. See <a class="link" href="./#transgender">Transgender</a>*, <a class="link" href="./#gender">Gender</a>*.
+    </div><div  id="collusion" class="whiteRow"><span class="rowTitle">Collusion – </span>Preventing someone from eliminating <a class="link" href="./#oppression">oppression</a>*. All moderates are either colluders
+    (bad), or <a class="link" href="./#ally">allies</a>* (good).
+    </div><div  id="colonization" class="grayRow"><span class="rowTitle">Colonization – </span>The arrival of (anyone with) <a class="link" href="./#ideology">ideology</a>*. Opposite of <a class="link" href="./#migration">Migration</a>*, <a class="link" href="./#decolonization">DeColonization</a>*.
+    </div><div  id="colorblindness" class="whiteRow"><span class="rowTitle">Color-blindness – </span>Gentle rebuke for any <a class="link" href="./#ally">ally</a>* who doesn’t sufficiently parrot <a class="link" href="./#crt">Critical Race
+    Theory</a>*’s dogma about universal minority <a class="link" href="./#marginalization">marginalization</a>* & oppressed victimhood.
+    </div><div  id="critical" class="grayRow"><span class="rowTitle">Critical – </span>1950s Frankfurt <a class="link" href="./#neomarxism">neo-Marxist</a>* School’s term for properly seeing something with the
+    correct neo-Marxist attitude, usually as oppressed-or-oppressor. E.g, “2+2 = 4” is an act of
+    <a class="link" href="./#oppression">Oppression</a>*, but “2 bigotries + 2 bigotries = 4 bigotries” an act of <a class="link" href="./#decolonization">DeColonization</a>*.
+    </div><div  id="criticalconsciousness" class="whiteRow"><span class="rowTitle">Critical Consciousness – </span>Synonym for <a class="link" href="./#woke">woke</a>*. It’s when a person finally arrives at the utopian
+    realization that it’s not about fixing this-or-that wrong, but about advancing the general Hegelian
+    dialectic-process thru deeper-&-deeper <a class="link" href="./#cancel">cancellation</a>*-purges (Bloodshed is optional !), until arrival at
+    the Omega point (<a class="link" href="./#greatreset">Great Reset</a>*) of world revolution, when everyone will universally confess the new
+    worldwide creed, and their proper identity within it, thus rewriting history & reality. See <a class="link" href="./#critical">critical</a>*.
+    </div><div  id="crt" class="grayRow"><span class="rowTitle">Critical Race Theory – </span>Synonym for “Class Warfare.” Everyone-&-everything must be divided
+    into <a class="link" href="./#marginalization">marginalized</a>* victims, or <a class="link" href="./#privilege">privileged</a>* oppressors. Then the disparity between them must be
+    deconstructively harped upon, until the “<a class="link" href="./#oppression">oppressor</a>*” crumbles or confesses <a class="link" href="./#collusion">collusion</a>*, and the
+    “victim” correctly parrots <a class="link" href="./#criticalconsciousness">Critically conscious</a>* activism.
+    </div><div  id="critical" class="whiteRow"><span class="rowTitle">Critical Reasoning – </span>The removal of <a class="link" href="./#ideology">ideology</a>*, unlearning it, and then optionally relearning it with
+    proper <a class="link" href="./#woke">woke</a>* jargon & disapproval.
+    </div><div  id="culture" class="grayRow"><span class="rowTitle">Culture – </span>Similar to <a class="link" href="./#ideology">ideology</a>*, any habit which is resistant to the dialectic process toward world
+    revolution, and which must therefore be shamed & renounced as <a class="link" href="./#oppression">oppressive</a>* to someone.
+    </div><div  id="culturalappropriation" class="whiteRow"><span id="appropriation" class="rowTitle">Cultural (Mis)Appropriation – </span>An excuse to blame one culture for liking another culture, since all
+    cultures & identities, are ultimately supposed to be erased.
+    </div><div  id="decolonization" class="grayRow"><span class="rowTitle">Decolonization – </span>The removal of <a class="link" href="./#ideology">ideology</a>*, unlearning it, and then optionally relearning it with
+    proper <a class="link" href="./#woke">woke</a>* jargon & disapproval.
+    </div><div  id="dei" class="whiteRow"><span class="rowTitle">DEI (BF) – </span><a class="link" href="./#diversity">Diversity</a>*, <a class="link" href="./#equity">Equity</a>*, <a class="link" href="./#inclusion">Inclusion</a>*; and optionally <a class="link" href="./#belonging">Belonging</a>* & <a class="link" href="./#justice">Justice</a>*.
+    </div><div  id="discrimination" class="grayRow"><span class="rowTitle">Discrimination – </span>Unequal mis-treatment of <a class="link" href="./#marginalization">marginalized</a>* groups. (But unequal mis-treatment of
+    <a class="link" href="./#privilege">privileged</a>* groups is <a class="link" href="./#accountability">accountability</a>*, e.g, in “Affirmative Action” programs.)
+    </div><div  id="diversity" class="whiteRow"><span class="rowTitle">Diversity – </span>The obligatory hiring, not of diverse people, per se, but of Diversity experts
+    (“apparatchiks”), able to parrot all this <a class="link" href="./#critical">critical-</a> <a class="link" href="./#neomarxism">neo-Marxist</a>* dogma / techno-jargon.
+    </div><div  id="equity" class="grayRow"><span class="rowTitle">Equity – </span>Socialism. (The redistribution of wealth/truth until everyone has equal amounts.) In the
+    processing dialectic of History, it’s the stage, just before <a class="link" href="./#justice">Justice</a>* (Communism).
+    </div><div  id="gender" class="whiteRow"><span class="rowTitle">Gender – </span>The imaginary, fantasy correlative to one’s real, biological sex. Gender can change or
+    redefine itself, as flippantly or creatively, as one’s feelings change, and this must be insisted upon, to
+    <a class="link" href="./#liberation">liberate</a>* people from the former <a class="link" href="./#oppression">oppressive</a>* <a class="link" href="./#ideology">ideology</a>* of Natural Law, wherein they were supposed to conform to the so-called ‘nature’, in which they were supposedly created. See <a class="link" href="./#transgender">Transgender</a>*.
+    </div><div  id="greatreset" class="grayRow"><span class="rowTitle">Great Reset – </span>The dawning of world revolution, by reaching the Omega point, when all opposition
+    has been finally removed to implementing a <a class="link" href="./#neomarxism">neo-Marxist</a>* belief, or policy, so that it may be dictated
+    autocratically from the top, by <a class="link" href="./#woke">woke</a>* neo-Marxist Party leadership.
+    </div><div  id="heteronormativity" class="whiteRow"><span class="rowTitle">Heteronormativity – </span>A label to pigeonhole heterosexuals in, as if they are not in fact the universal
+    “norm.” See <a class="link" href="./#queer">Queer</a>*.
+    </div><div  id="ideology" class="grayRow"><span class="rowTitle">Ideology – </span>A slur for any pre-existing beliefs (except <a class="link" href="./#marxism">Marxist</a>* <a class="link" href="./#criticalconsciousness">Critical consciousness</a>* Theory,
+    which alone doesn’t count as ideology, but as <a class="link" href="./#science">Science</a>*).
+    </div><div  id="inclusion" class="whiteRow"><span class="rowTitle">Inclusion – </span>Censorship & <a class="link" href="./#cancel">cancellation</a>* of anyone/anything contrarian. See <a class="link" href="./#safespace">Safe Space</a>*.
+    </div><div  id="intersectionality" class="grayRow"><span class="rowTitle">Intersectionality – </span>Attention to the number of victimhoods that intersect in a person: The more
+    victimhoods that you can show to intersect in you, the more authentic you are, and the more you can-
+    &-should help demand arbitrary concessions, as <a class="link" href="./#accountability">accountability</a>*.
+    </div><div  id="justice" class="whiteRow"><span class="rowTitle">Justice – </span>The long-term goal: Voluntary Communism. (But, according to Marx, this will only occur
+    after a traumatic period of enforced Socialism.) See <a class="link" href="./#greatreset">Great Reset</a>*.
+    </div><div  id="lgbtq" class="grayRow"><span class="rowTitle">LGBTQ – </span>A catchall omnibus of sexual “filth[s]”, used as a test-case, to see if a person is truly willing to
+    check all their common sense, values, and very soul, for party dogma, thus also demonstrating their
+    advancement-potential, as activists, in the similarly-unnatural brainwashing scheme, <a class="link" href="./#neomarxism">neo-Marxism</a>*.
+    </div><div  id="liberation" class="whiteRow"><span class="rowTitle">Liberation – </span>Any <a class="link" href="./#marxism">Marxist</a>* success. E.g., freeing people from the free market, to exist in a highlyregulated Socialist redistribution-system, is Liberation. Synonym for <a class="link" href="./#decolonization">DeColonization</a>*, e.g, Liberation
+    Theology is where one un-learns Theology, so that it may be re-learned, in a <a class="link" href="./#neomarxism">neo-Marxist</a>* context.
+    </div><div  id="marginalization" class="grayRow"><span class="rowTitle">Marginalization – </span>Synonym for victimhood. Opposite of <a class="link" href="./#privilege">Privilege</a>*.
+    </div><div  id="marxism" class="whiteRow"><span class="rowTitle">Marxism – </span>The notion that there are ‘haves’ and ‘have-nots’, and that the ‘haves’ use their
+    possessions to control and oppress the ‘have-nots,’ so they need to be repeatedly cancelled, until
+    everyone is a ‘have not.’ Synonym for <a class="link" href="./#justice">Justice</a>*.
+    </div><div  id="migration" class="grayRow"><span class="rowTitle">Migration – </span>The arrival of anyone who hides their <a class="link" href="./#ideology">ideology</a>*. Opposite of <a class="link" href="./#colonization">Colonization</a>*.
+    </div><div  id="neomarxism" class="whiteRow"><span class="rowTitle">Neo-Marxism – </span>In additon to <a class="link" href="./#marxism ">Marxism</a>*, the notion that there are ALSO ‘haves’ and ‘have-nots’ in
+    ideas, and that the ‘haves’ use their knowledge to control and <a class="link" href="./#oppression">oppress</a>* the ‘have-nots,’ so they need
+    to be repeatedly <a class="link" href="./#cancel">cancelled</a>*, until everyone knows nothing, except what has been reframed from a
+    neo-Marxist perspective. Synonym for <a class="link" href="./#woke">woke</a>*, and <a class="link" href="./#criticalconsciousness">Critically conscious</a>*.
+    </div><div  id="nonbinary" class="grayRow"><span class="rowTitle">Non-binary – </span>A piece of jargon useable (1) to sound technical; or (2) to demonstrate one’s
+    openness-of-mind to be so total, that one could believe anything, even <a class="link" href="./#neomarxism">neo-Marxism</a>*
+    </div><div  id="oppression" class="whiteRow"><span class="rowTitle">Oppression – </span>Ever since the Frankfurt School (1950s), it’s any knowledge that enables knowers to
+    have power over ignoramuses. (Perpetuating such knowledge is <a class="link" href="./#collusion">Collusion</a>*.) Alternatively, it’s any
+    power-imbalance, whatsoever.
+    </div><div  id="patriarchy" class="grayRow"><span class="rowTitle">Patriarchy – </span>Panacea-slur with which to disparage any authority whatsoever, on the basis of its
+    association with the male <a class="link" href="./#gender">gender</a>*; or any male on the basis of his/hir/its/their/sein+ association with
+    authority.
+    </div><div  id="prejudice" class="whiteRow"><span class="rowTitle">Prejudice – </span>An un-justified judgment about a group. (E.g. the terms <a class="link" href="./#patriarchy">patriarchy</a>*, and <a class="link" href="./#racialcapitalism">racial Capitalism</a>* would be excellent examples of prejudice, except that they were coined by the <a class="link" href="./#woke">woke</a>*
+    who alone bring about <a class="link" href="./#justice">Justice</a>*, and who alone have the Gnostic insight to justly define groups.)
+    </div><div  id="privilege" class="grayRow"><span class="rowTitle">Privilege – </span>Inability to demonstrate victimhood, and thus consequent <a class="link" href="./#cancel">cancel</a>*-ability. Opposite of
+    <a class="link" href="./#marginalization">marginalization</a>*.
+    </div><div  id="queer" class="whiteRow"><span class="rowTitle">Queer – </span>To goad youth into testing out various kinds of sex, so as to destabilize their sexual
+    identities & values, and thus transform them into confused, angry Relativistic activists.
+    </div><div  id="race" class="grayRow"><span class="rowTitle">Race – </span>A made-up social construct, that doesn’t exist; but it does exist for purposes of assigning
+    <a class="link" href="./#oppression">oppression</a>*, <a class="link" href="./#marginalization">marginalization</a>*, and right to demand <a class="link" href="./#accountability">accountability</a>*.
+    </div><div  id="racial" class="whiteRow"><span class="rowTitle">Racial & Ethnic Identity – </span>Similar to <a class="link" href="./#gender">gender</a>*-identity, it’s a secret loophole, enabling newly <a class="link" href="./#woke">woke</a>* <a class="link" href="./#privilege">privileged</a>* people, like Sen. Elizabeth Warren, to slyly transition to <a class="link" href="./#marginalization">marginalized</a>* status,
+    merely by identifying as the race/ethnicity of their former victims. However, they must do it
+    authentically, dressing–acting–&–talking like, advocating for, and celebrating their new race/ethnicity.
+    Poor actors may be deemed guilty of <a class="link" href="./#culturalappropriation">Cultural Appropriation</a>*.
+    </div><div  id="racialcapitalism" class="grayRow"><span class="rowTitle">Racial Capitalism – </span>The notion that capitalism (a.k.a. “The Free Market”) is inherently racist,
+    because it considers the existence of <a class="link" href="./#race">race</a>*, when, as a stereotypical oppressor, it has no right to do
+    that. (But Capitalism does have the right to consider race, if it duly consults <a class="link" href="./#neomarxism">neo-Marxist</a>* experts,
+    who alone have the insight to define groups, and their <a class="link" href="./#culturalappropriation">appropriate</a>* aptitudes. Such consultation
+    occurs, thru the hiring of <a class="link" href="./#dei">DEI</a>* staff, to direct them, and avocate for them, that they are in fact
+    <a class="link" href="./#liberation">liberating</a>*, rather than <a class="link" href="./#oppression">oppressing</a>*.)
+    </div><div  id="racialization" class="whiteRow"><span class="rowTitle">Racialization – </span><a class="link" href="./#racism">Racism</a>* toward an entire ethnicity.
+    </div><div  id="racial" class="grayRow"><span class="rowTitle">Racial Reconciliation – </span>A show-trial, within one’s local community, that culminates in <a class="link" href="./#justice">Justice</a>*
+    within that community, converting the entire community into a <a class="link" href="./#safespace">Safe Space</a>*. <a class="link" href="./#reparations">Reparations</a>* then
+    become no longer necessary, since <a class="link" href="./#accountability">accountability</a>* can then be imposed, by the more regular
+    means, of top-down party dictats.
+    </div><div  id="racism" class="whiteRow"><span class="rowTitle">Racism – </span>Given that <a class="link" href="./#race">race</a>* sometimes exists, but sometimes doesn’t exist, racism occurs, any time
+    that a consideration of race ought not to occur, but does; or ought to occur, but doesn’t. Again, it
+    should only occur for purposes of assigning <a class="link" href="./#oppression">oppression</a>*, <a class="link" href="./#marginalization">marginalization</a>*, and right to demand
+    <a class="link" href="./#accountability">accountability</a>*.
+    </div><div  id="racist" class="grayRow"><span class="rowTitle">Racist – </span>Anyone <a class="link" href="./#collusion">colluding</a>* with a racist policy, or government. (Given that all govern-ments on
+    earth currently excerise racist bias in favor of their own particular racial majority, everyone who is not
+    a government-unbuilding, <a class="link" href="./#woke">woke</a>*, globalist revolutionary, is a racist.)
+    4
+    </div><div  id="reparations" class="whiteRow"><span class="rowTitle">Reparations – </span>A form of <a class="link" href="./#accountability">accountability</a>*; it’s a mere token acknowledgment, that a person can
+    never fully atone for their ancestors’ possible crimes,’ consequential damages to that ancestor’s
+    victim’s partial descendants, but that their ancestors’ victim’s partial descendants hold eternal rights
+    to unending, on-demand reparations, up and until some point where <a class="link" href="./#equity">Equity</a>* occurs.
+    </div><div  id="safespace" class="grayRow"><span class="rowTitle">Safe Space – </span>A holy area, defended from contrarian <a class="link" href="./#ideology">ideology</a>*, where persons of victimhood can
+    receive the nourishing sacraments of the coming <a class="link" href="./#neomarxism">neo-Marxist</a>* utopia, imagining how it will someday
+    be EVERYWHERE! (Safe spaces are temporary micro-cosms that should grow, over time, someday
+    merging with the future Communist state.)
+    </div><div  id="science" class="whiteRow"><span class="rowTitle">Science – </span>An <a class="link" href="./#oppression">oppressive</a>* social construct, which discounts other “knowledges,” or “ways of
+    knowing.” To some theorists, like Gramsci, the only true science is <a class="link" href="./#marxism ">Marxism</a>*.
+    </div><div  id="sel" class="grayRow"><span class="rowTitle">Social Emotional Learning (SEL) – </span>The process of brainwashing children, without their realizing it. It
+    involves 1.) Searching for emotionally Generative Themes. 2.) Codifying & Decodifying the cultural
+    item to be destroyed. 3.) Problematizing it for them, to create 4.) their Conscientization, as a cloned
+    activist or <a class="link" href="./#ally">ally</a>* (at least for this issue).
+    </div><div  id="structural" class="whiteRow"><span class="rowTitle">Structural Racism – </span><a class="link" href="./#collusion">Collusion</a>* with the idea that population-wide histories, cultures, and
+    institutions should be allowed to compete, and produce unequal outcomes. Solved by implementing
+    <a class="link" href="./#equity">Equity</a>*, or just <a class="link" href="./#marxism ">Marxism</a>*.
+    </div><div  id="targeted" class="grayRow"><span class="rowTitle">Targeted Universalism – </span>Like in archery, staying mindful of the ultimate target, which is universal
+    world revolution.
+    </div><div  id="tokenism" class="whiteRow"><span class="rowTitle">Tokenism – </span>The Plantational, and later Democrat Party tradition of maintaining domestic servants
+    (e.g, figurehead president Barak Obama) around the administration hub, as a token of supposed
+    minority approval & involvement, without giving them actual power. (Conservatives, by contrast,
+    typically don’t hire/vote for such token-individuals, unless they can demonstrate (1) skills and (2)
+    selfless, enthusiastic, interpersonal cooperation.)
+    </div><div  id="transgender" class="grayRow"><span class="rowTitle">Transgender – </span>The anti-Realist, anti-Scientific, Idealistic fantasy that there are social constructs,
+    associated with sex, but not sex, but twistable to association with the opposite sex, or no sex; and that
+    neither 30 trillion body-encoding, unanimous, pieces of molecular evidence, nor any Theological,
+    Philosophical, or Ethical authority, should have any say in contesting this fantasy. See <a class="link" href="./#gender">Gender</a>*, <a class="link" href="./#cisgender">Cisgender</a>*.
+    </div><div  id="white" class="whiteRow"><span class="rowTitle">White Fragility – </span>The gleeful moment when whites finally snap, and over-react, thus making them
+    framable as oppressors.
+    </div><div  id="white" class="grayRow"><span class="rowTitle">White Supremacy – </span>The intolerable, insulting phobia against considering whether white culture
+    might be objectively more widely successful than non-white culture.
+    (No, this isn’t Black Fragility, which can’t be admitted to exist, as it would violate <a class="link" href="./#woke">woke</a>* ethics to
+    disparage the <a class="link" href="./#marginalization">marginalized</a>*. No, that’s not <a class="link" href="./#privilege">privilege</a>*, nor <a class="link" href="./#prejudice">prejudice</a>* either, but <a class="link" href="./#criticalconsciousness">consciousness</a>*.)
+    </div><div  id="whiteness" class="whiteRow"><span class="rowTitle">Whiteness – </span>Convenient jargon to co-condemn any <a class="link" href="./#token">Token</a>* blacks who don’t sufficiently act
+    according to their new, <a class="link" href="./#neomarxism">neo-Marxist</a>*-assigned black identity.
+    </div><div  id="woke" class="grayRow"><span class="rowTitle">Woke – </span>Street-talk synonym for the academic term <a class="link" href="./#criticalconsciousness">Critical consciousness</a>*.
+    </div><div  id="x" class="whiteRow"><span class="rowTitle">-X – </span>Suffix to specify <a class="link" href="./#gender">gender</a>*-indeterminacy, e.g, instead of Latino, or Latina, write Latinx, even if
+    Latinxes never use this word. And no, this isn’t Cultural <a class="link" href="./#culturalappropriation">(Mis)Appropriation</a>*, because <a class="link" href="./#woke">woke</a>*
+    experts alone have the Gnostic insight to authentically & appropriately define people.
+    </div><div  id="xenophobia" class="grayRow"><span class="rowTitle">Xenophobia – </span>A disparaging label for anyone unexcited about merging with their neighbors, and
+    losing their identity, as called for by the Communist agenda.
+    </div> 
+</div> 
 <!--
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
@@ -46,12 +309,85 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
                                                                               -->
 
 <script>
-    function redirectToPDF() {
-        //setTimeout( function() {
-            window.location = 'https://diversityfoolbox.com/DiversityFoolbox.pdf';
-        //}, 3000);
-        
+
+
+    function removeCapitalsFromURLid() {
+        var str = window.location.toString();
+        if (str.indexOf('#') > 0) {
+            var URLpath = str.substring(0, str.lastIndexOf('#') + 1);
+            var URLid = str.substring(str.lastIndexOf('#') + 1);
+            var URLidLOWER = URLid.toLowerCase();
+
+            if (checkUppercase(URLid)) {
+                URLid = URLidLOWER;    
+            }
+
+        // If id has wrong suffix . . .
+            var ids = [];
+            //Assemble list of IDs:
+            $('#content').find("div").each(function(){ 
+                ids.push(this.id); 
+            }); 
+
+            console.log('========= ids =========');console.log(ids);
+
+            var found = false;
+        // Search for literally typed id . . .
+            ids.forEach(function(item,index) {
+                if (URLid == item) {
+                    found = true;
+                }
+            })
+
+            if (found == false) {
+
+                var found1st4 = 'false';
+                // If the 1st 4 letters match, then go to that ID
+                ids.forEach(function(item, index) {
+                    console.log('1ST 4: Comparing '+item.substring(0,4)+" --to-- "+URLid.substring(0,4));
+                    if ( item.substring(0,4) == URLid.substring(0,4) ) {
+                        console.log('1ST 4: found ID #'+ids[index]);  
+                        found1st4 = ids[index];
+
+
+                    }
+                })
+                console.log('found1st4: '+found1st4);
+                if (found1st4 !== 'false') {
+                    console.log(' Going to FOUND 1ST 4 ');
+                    window.location = URLpath+found1st4;
+                } else {
+                    console.log(' Going to try to Find 1ST 1 ');
+                    // If the 1st 1 letters matches, then go to that ID
+                    ids.forEach(function(item, index) {
+                        if ( item.substring(0,1) == URLid.substring(0,1) ) {
+                            console.log('1ST 1: found ID #'+ids[index]);
+                            window.location = URLpath+ids[index];
+                            ids.length = index + 1;
+                        }
+                    })                    
+                }
+
+            } else {
+                console.log('Do nothing, we are already at that ID; \n but maybe make it lower case.');
+                if (checkUppercase(URLid)) {
+                    window.location = URLpath+URLidLOWER;    
+                }
+            }
+            //setTimeout( function() {
+                //window.location = 'https://diversityfoolbox.com/DiversityFoolbox.pdf';
+            //}, 3000);
+        }
     }
+
+    function checkUppercase(str){
+    for (var i=0; i<str.length; i++){
+      if (str.charAt(i) == str.charAt(i).toUpperCase() && str.charAt(i).match(/[a-z]/i)){
+        return true;
+      }
+    }
+    return false;
+};
 </script>
 
 

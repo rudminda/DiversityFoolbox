@@ -94,7 +94,23 @@
         .source:hover { background-color: #77b300; border-color: #d5ff80; 
 
         }
-
+        #h1top { position: relative; margin: 0; 
+            width: 100%; height: auto; margin: 0 50px; padding:  0; border: 0px solid green; 
+            background-color: #fff; color:  white;  
+            text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;  
+            font-family: Cooper Black, Cooper Black Std;  text-align: center;         
+        }
+        
+        .headerButton {
+            position: relative; float: right; display: block; 
+            background-color: #ccc; border: 3px solid white; border-radius: 8px; 
+            width: 200px; padding: 3px; margin: 0px 30px;
+            font-size: 15px; font-family: Calibri; text-shadow: none;
+        }
+        .headerButton:hover {
+            background-color: #000; color: yellow; border: 3px solid yellow; 
+            text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;  
+        }
   </style>
 
 </head>
@@ -116,8 +132,11 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
       <!--div style="font-size: 20px;">Whoops.  Please go to  <a href="https://diversityfoolbox.com/DiversityFoolbox.pdf">https://diversityfoolbox.com/DiversityFoolbox.pdf</a></div>
 <div id="headArea"-->
 
-        <h1 id="h1top" style = "position: relative; margin: 0; width: 100%; height: auto; margin:  0; padding:  0; font-family: Cooper Black, Cooper Black Std; color:  white;  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;  border: 0px solid green; text-align: center; background-color: #fff;">DiversityFoolbox
-        <a href="./DiversityFoolbox.pdf" style="position: relative; float: right; display: block; float: right; background-color: #ccc; border-radius: 8px; padding:  3px; font-size: 15px; font-family: Calibri; text-shadow: none;">Printable PDF</a>
+        
+        <h1 id="h1top">DiversityFoolbox
+              <a class="headerButton" href="./DiversityFoolbox.pdf">
+                  Printable PDF</a> 
+              <a class="headerButton" href="https://www.paypal.com/donate/?hosted_button_id=68DL3L2JCWD8J" style="color: red;">Donate!</a>
         </h1>
     <div id="flexArea" style = "display: flex; justify-content: space-between;  align-items: center; min-width: 100% !important; border: 0px solid red; height: auto; background-color: #fff;">
 
